@@ -1,0 +1,84 @@
+/* App.css */
+
+/* General styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Styles for App container */
+.appBlock {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Styles for question label and input */
+.questionLabel {
+  font-size: 24px; /* Large font size */
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.questionInput {
+  width: 300px; /* Set width for input */
+  padding: 10px;
+  font-size: 20px; /* Large font size */
+  border-radius: 5px;
+}
+
+/* Styles for file label and input */
+.fileLabel {
+  font-size: 18px; /* Smaller font size */
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.fileInput {
+  padding: 20px;
+  font-size: 16px; /* Smaller font size */
+  border-radius: 5px;
+  border: 2px dashed #61dafb; /* Light blue dashed border */
+  color: #61dafb; /* Light blue text color */
+  background-color: #fff; /* White background */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.fileInput:hover {
+  border-color: #007bff; /* Dark blue border on hover */
+  color: #007bff; /* Dark blue text color on hover */
+}
+
+/* Styles for submit button */
+.submitBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 20px; /* Large font size */
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Blue button background */
+  color: #fff; /* White button text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.submitBtn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styles for result output paragraph */
+.resultOutput {
+  margin-top: 20px;
+  font-size: 18px; /* Medium font size */
+  opacity: 0; /* Initially hide */
+  animation: appearText 1.5s forwards; /* Animation for smooth appearance */
+}
+
+@keyframes appearText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
