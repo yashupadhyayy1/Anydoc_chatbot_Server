@@ -56,7 +56,7 @@ app.add_middleware(
 
 @app.get("/")
 def firstFunc():
-    return "<h1qWelcome to the backend"
+    return {"Welcome to the backend"}
 
 @app.post("/predict", response_model=Response)
 async def predict(question: str = Form(...), file: UploadFile = File(...)) -> Any:
