@@ -42,9 +42,7 @@ class Response(BaseModel):
     result: str | None
 
 origins = [
-    "http://localhost",
-    "http://localhost:8080",
-    "http://localhost:3000"
+    "*"
 ]
 
 app = FastAPI()
