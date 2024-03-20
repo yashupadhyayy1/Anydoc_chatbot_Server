@@ -54,6 +54,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+def firstFunc():
+    return "<h1qWelcome to the backend"
 
 @app.post("/predict", response_model=Response)
 async def predict(question: str = Form(...), file: UploadFile = File(...)) -> Any:
@@ -71,7 +74,7 @@ async def predict(question: str = Form(...), file: UploadFile = File(...)) -> An
     result = document_processor.process_document()
     
     # result = "Processed result based on the question and file"
-    GeminiProDatabase('mongodb://localhost:27017/', 'gemini_pro_db').store_question_file_response(question, file.file, {'result': result})
+    # GeminiProDatabase('mongodb://localhost:27017/', 'gemini_pro_db').store_question_file_response(question, file.file, {'result': result})
     # data = db.show_dbid(document_id)
     # print(data)
 

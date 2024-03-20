@@ -57,7 +57,7 @@ export default function App() {
       formData.append("question", question);
     }
 
-    fetch("http://127.0.0.1:8000/predict", {
+    fetch("https://taskassignment-afdw.onrender.com/predict", {
       method: "POST",
       body: formData,
     })
