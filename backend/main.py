@@ -5,7 +5,7 @@ from pydantic import BaseModel
 from typing import Any
 from Model import DocumentProcessor
 from MongoServer import GeminiProDatabase
-
+import os
 # Load environment variables from .env file (if any)
 load_dotenv()
 
