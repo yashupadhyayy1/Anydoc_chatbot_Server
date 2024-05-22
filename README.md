@@ -1,6 +1,6 @@
 # Document Processor Chatbot
 
-The Document Processor API is a FastAPI application that allows users to upload various types of documents (PDFs, DOCX, text files, etc.) and receive processed results based on user-provided questions. Whether you’re building a search engine, a chatbot, or any other application that requires document processing, this API can be a powerful tool.
+The Document Processor Chatbot is a FastAPI application that allows users to upload various types of documents (PDFs, DOCX, text files, etc.) and receive processed results based on user-provided questions. Whether you’re building a search engine, a chatbot, or any other application that requires document processing, this API can be a powerful tool as well as contain a databases to manage and save the documents in server.
 
 ## Features
 
