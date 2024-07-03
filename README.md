@@ -10,7 +10,7 @@ The Document Processor Chatbot is a FastAPI application that allows users to upl
   
 - **Conversation Chain:** The API leverages a conversation chain to provide detailed answers, even if the answer is not directly in the provided context.
 
-##Beneficial Fields:
+## Beneficial Fields:
 Implementing the **Document Processor Chatbot** project would be highly beneficial in several fields where document management, information retrieval, and automated response generation are crucial. Here are some of the best fields to implement this project:
 
 ### 1. **Legal Industry**
